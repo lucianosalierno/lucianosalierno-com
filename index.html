@@ -627,7 +627,7 @@ footer.foot .fl > * { white-space: nowrap; }
       <h2>Let's talk about your project, <em>the quote is free</em>.</h2>
       <p class="lead">Email or call me with any request, even if you are not yet sure what you need. Within 1–2 days you will receive a reply with a concrete proposal.</p>
       <div class="direct">
-        <a href="mailto:luciano.salierno.work@gmail.com?subject=Quote%20request"><span class="ic" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span><span><small>Email</small><span id="addr">luciano.salierno.work@gmail.com</span></span></a>
+        <a href="mailto:info@lucianosalierno.it?subject=Quote%20request"><span class="ic" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span><span><small>Email</small><span id="addr">info@lucianosalierno.it</span></span></a>
         <a href="tel:+393899818719"><span class="ic" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2Z"/></svg></span><span><small>Phone</small><span>+39 389 981 8719</span></span></a>
       </div>
       <span class="badge"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#d9b48a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Free quote within 1–2 days</span>
@@ -660,7 +660,7 @@ footer.foot .fl > * { white-space: nowrap; }
 <footer class="foot">
   <div class="wrap">
     <div class="fl"><span>© <span id="anno">2026</span> Luciano Salierno · Rome, Italy</span><span>VAT no. IT16494231000</span></div>
-    <div class="fl"><a href="mailto:luciano.salierno.work@gmail.com">luciano.salierno.work@gmail.com</a><a href="tel:+393899818719">+39 389 981 8719</a></div>
+    <div class="fl"><a href="mailto:info@lucianosalierno.it">info@lucianosalierno.it</a><a href="tel:+393899818719">+39 389 981 8719</a></div>
   </div>
 </footer>
 
@@ -673,8 +673,8 @@ footer.foot .fl > * { white-space: nowrap; }
     const nome = f.nome.value.trim(), rec = f.recapito.value.trim();
     if (!nome || !rec) { out.textContent = "Please enter your name and a way to reach you, so I can reply."; (nome ? f.recapito : f.nome).focus(); return; }
     const corpo = `Hi Luciano,\n\nI would like a quote for: ${f.tipo.value}.\n\n${f.msg.value.trim() || "(details to be defined)"}\n\n${nome}\nContact: ${rec}`;
-    location.href = "mailto:luciano.salierno.work@gmail.com?subject=" + encodeURIComponent("Quote request – " + f.tipo.value) + "&body=" + encodeURIComponent(corpo);
-    out.textContent = "Your email app is opening. If it does not, write to me at luciano.salierno.work@gmail.com.";
+    location.href = "mailto:info@lucianosalierno.it?subject=" + encodeURIComponent("Quote request – " + f.tipo.value) + "&body=" + encodeURIComponent(corpo);
+    out.textContent = "Your email app is opening. If it does not, write to me at info@lucianosalierno.it.";
   });
 })();
 </script>
