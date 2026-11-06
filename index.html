@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Luciano Salierno | Web Developer</title>
-<meta name="description" content="Websites, custom web applications, automation and data solutions for businesses, professional firms and public bodies. Free quote within 24 hours, fixed price, over 10 years of experience.">
+<meta name="description" content="Websites, apps, custom web applications, automation and data solutions for businesses, professional firms and public bodies. Free quote within 24 hours, fixed price, over 10 years of experience.">
 <link rel="alternate" hreflang="it" href="https://www.lucianosalierno.it/">
 <link rel="alternate" hreflang="en" href="https://www.lucianosalierno.com/">
 <link rel="alternate" hreflang="x-default" href="https://www.lucianosalierno.it/">
@@ -17,7 +17,7 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Luciano Salierno">
 <meta property="og:title" content="Luciano Salierno | Web Developer">
-<meta property="og:description" content="Websites, custom applications and automation for businesses and professionals. Free quote within 24 hours.">
+<meta property="og:description" content="Websites, apps, custom applications and automation for businesses and professionals. Free quote within 24 hours.">
 <meta property="og:url" content="https://www.lucianosalierno.com/">
 <meta property="og:locale" content="en_GB">
 <meta property="og:image" content="https://www.lucianosalierno.com/og-image.jpg">
@@ -27,7 +27,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="google-site-verification" content="5uXAJuc8F6cJCbuzG8bj_YKbOiYhTY4IW0gDau211Cc">
 <meta name="google-site-verification" content="D2VdoYDDarsw8bD6egmHGR9m9RNIghJjIIWEzUtbsEI">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","@id":"https://www.lucianosalierno.com/#attivita","name":"Luciano Salierno","description":"Websites, custom applications and automation for businesses and professionals. Free quote within 24 hours.","url":"https://www.lucianosalierno.com/","image":"https://www.lucianosalierno.com/og-image.jpg","logo":"https://www.lucianosalierno.com/icon-192.png","telephone":"+39 389 981 8719","email":"info@lucianosalierno.it","vatID":"IT16494231000","address":{"@type":"PostalAddress","addressLocality":"Roma","addressRegion":"RM","addressCountry":"IT"},"areaServed":[{"@type":"Country","name":"Italy"},{"@type":"Continent","name":"Europe"}],"knowsLanguage":["it","en"],"sameAs":["https://www.lucianosalierno.it/","https://share.google/HQehbR5rHF9cVby4g"],"founder":{"@type":"Person","name":"Luciano Salierno","jobTitle":"Web Developer"},"hasOfferCatalog":{"@type":"OfferCatalog","name":"Services","itemListElement":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"Professional websites"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Custom web applications"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Process automation"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Data integration and dashboards"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Public data monitoring"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Excel and the tools you already use"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Documentation and training"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Support and maintenance"}}]}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","@id":"https://www.lucianosalierno.com/#attivita","name":"Luciano Salierno","description":"Websites, apps, custom applications and automation for businesses and professionals. Free quote within 24 hours.","url":"https://www.lucianosalierno.com/","image":"https://www.lucianosalierno.com/og-image.jpg","logo":"https://www.lucianosalierno.com/icon-192.png","telephone":"+39 389 981 8719","email":"info@lucianosalierno.it","vatID":"IT16494231000","address":{"@type":"PostalAddress","addressLocality":"Roma","addressRegion":"RM","addressCountry":"IT"},"areaServed":[{"@type":"Country","name":"Italy"},{"@type":"Continent","name":"Europe"}],"knowsLanguage":["it","en"],"sameAs":["https://www.lucianosalierno.it/","https://share.google/HQehbR5rHF9cVby4g"],"founder":{"@type":"Person","name":"Luciano Salierno","jobTitle":"Web Developer"},"hasOfferCatalog":{"@type":"OfferCatalog","name":"Services","itemListElement":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"Professional websites"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Custom web applications"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Apps for smartphone and computer"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Process automation"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Data integration and dashboards"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Public data monitoring"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Excel and the tools you already use"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Documentation and training"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Support and maintenance"}}]}}</script>
 <link rel="preload" href="/fonts/newsreader-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/fonts/instrument-sans.woff2" as="font" type="font/woff2" crossorigin>
 <style>
@@ -128,6 +128,7 @@ section.band.alt { background: var(--cream); }
 .head p { margin: 0; color: var(--muted); font-size: 18px; }
 
 .services { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+.services .svc:last-child:nth-child(odd) { grid-column: 1 / -1; }
 .svc { background: var(--white); border: 1px solid var(--sand); border-radius: var(--r); padding: 26px 26px 24px; display: grid; grid-template-columns: auto minmax(0, 1fr); grid-template-rows: auto auto 1fr; gap: 4px 18px; transition: border-color .2s, transform .2s, box-shadow .2s; }
 .svc:hover { border-color: var(--caramel); transform: translateY(-2px); box-shadow: 0 18px 40px -28px rgba(58, 42, 32, .4); }
 .ico { grid-row: span 3; width: 46px; height: 46px; border-radius: 12px; background: var(--cream); display: grid; place-items: center; color: var(--walnut); }
@@ -406,7 +407,7 @@ footer.foot .fl > * { white-space: nowrap; }
       <div>
         <span class="kicker">Freelance web developer</span>
         <h1>Tailor-made digital tools, <em>built with care</em>.</h1>
-        <p class="lead">Websites, applications and automation for businesses, professional firms and public bodies. I listen, propose the simplest solution that genuinely solves the problem, and deliver it ready to use.</p>
+        <p class="lead">Websites, apps and automation for businesses, professional firms and public bodies. I listen, propose the simplest solution that genuinely solves the problem, and deliver it ready to use.</p>
         <ul class="promise">
           <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#7f8b6b" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Free quote</li>
           <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#7f8b6b" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Reply within 24 hours</li>
@@ -467,6 +468,12 @@ footer.foot .fl > * { white-space: nowrap; }
           <h3>Custom web applications</h3>
           <p>Password-protected areas, booking systems, shared calendars and small management tools built around the way you work.</p>
           <div class="ex"><b>For example:</b> an appointment planner, a case archive, a client portal.</div>
+        </article>
+        <article class="svc">
+          <span class="ico" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="13" height="10" rx="1.5"/><path d="M1 17.5h15"/><rect x="17" y="7" width="6" height="13" rx="1.5"/><path d="M19.6 17.4h.8"/></svg></span>
+          <h3>Apps for smartphone and computer</h3>
+          <p>Apps that install on phones (Android and iPhone) and computers, with their own icon, notifications and offline use. One app for every device and, if needed, published on Google Play and the App Store.</p>
+          <div class="ex"><b>For example:</b> a customer app with bookings and notifications, an app for your staff, a desktop program for the office.</div>
         </article>
         <article class="svc">
           <span class="ico" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-3-6.7L21 8"/><path d="M21 3v5h-5"/><path d="M12 8v4l3 2"/></svg></span>
