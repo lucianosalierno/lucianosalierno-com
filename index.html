@@ -307,9 +307,9 @@ footer.foot .fl > * { white-space: nowrap; }
 .ex-cta p { margin: 0; font: 500 22px/1.3 var(--f-serif); color: var(--walnut-dark); text-wrap: balance; }
 
 /* pulsante WhatsApp fisso */
-.wa { position: fixed; z-index: 6; right: max(18px, env(safe-area-inset-right, 0px)); bottom: max(18px, env(safe-area-inset-bottom, 0px)); display: inline-flex; align-items: center; gap: 10px; padding: 10px 18px 10px 10px; border-radius: 999px; background: var(--walnut-dark); color: var(--ivory); text-decoration: none; font: 600 14.5px/1 var(--f-sans); box-shadow: 0 14px 34px -14px rgba(26, 28, 30, .55), 0 0 0 1px rgba(255,255,255,.06) inset; transition: transform .2s, background-color .2s; }
-.wa:hover { transform: translateY(-2px); background: var(--walnut); }
-.wa svg { width: 34px; height: 34px; padding: 7px; border-radius: 50%; background: #3f9d63; color: #fff; flex: none; }
+.wa { position: fixed; z-index: 6; right: max(18px, env(safe-area-inset-right, 0px)); bottom: max(18px, env(safe-area-inset-bottom, 0px)); display: inline-flex; align-items: center; justify-content: center; width: 58px; height: 58px; padding: 0; border-radius: 50%; background: #3f9d63; color: #fff; text-decoration: none; box-shadow: 0 14px 34px -14px rgba(26, 28, 30, .55); transition: transform .2s, background-color .2s; }
+.wa:hover { transform: translateY(-2px); background: #358a55; }
+.wa svg { width: 30px; height: 30px; flex: none; }
 
 @media (max-width: 1200px) {
   nav.links > a:not(.btn) { display: none; }
@@ -355,10 +355,7 @@ footer.foot .fl > * { white-space: nowrap; }
   .ico { grid-row: auto; margin-bottom: 8px; }
   .contact .wrap { padding-block: 68px; }
   form.req { padding: 22px; }
-  .wa { padding: 0; width: 56px; height: 56px; justify-content: center; }
-  .wa span { display: none; }
-  .wa svg { width: 56px; height: 56px; padding: 14px; }
-  .examples { grid-template-columns: minmax(0, 1fr); }
+    .examples { grid-template-columns: minmax(0, 1fr); }
   .notif { position: relative; left: auto; bottom: auto; width: auto; margin: -20px 12px 0; }
   .hero .note { margin-top: 12px; }
   .dash { padding: 14px 14px 34px; gap: 12px; }
@@ -494,56 +491,56 @@ h1 .br, h2 .br { display: block; text-wrap: balance; }
         <article class="svc">
           <span class="ico" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M7 6.5h.01M10 6.5h.01"/></svg></span>
           <h3>Professional websites</h3>
-          <p>Company websites and landing pages with a polished look, fast and flawless on mobile. Clear copy that explains what you do and invites people to get in touch.</p>
-          <div class="ex"><b>For example:</b> a website for a professional firm, a local business or a freelancer.</div>
+          <p>Company websites and landing pages with a polished design, fast and optimised for mobile, with clear copy that presents your business and generates enquiries.</p>
+          <div class="ex"><b>Ideal for:</b> professional firms, local businesses, freelancers.</div>
         </article>
         <article class="svc">
           <span class="ico" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><path d="M14 17.5h7M17.5 14v7"/></svg></span>
           <h3>Custom web applications</h3>
-          <p>Password-protected areas, booking systems, shared calendars and small management tools built around the way you work.</p>
-          <div class="ex"><b>For example:</b> an appointment planner, a case archive, a client portal.</div>
+          <p>Secure private areas, booking systems, shared calendars and management tools built around your processes.</p>
+          <div class="ex"><b>Typical use cases:</b> appointment planners, case archives, client portals.</div>
         </article>
         <article class="svc">
           <span class="ico" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="13" height="10" rx="1.5"/><path d="M1 17.5h15"/><rect x="17" y="7" width="6" height="13" rx="1.5"/><path d="M19.6 17.4h.8"/></svg></span>
           <h3>Apps for smartphone and computer</h3>
-          <p>Apps that install on phones (Android and iPhone) and computers, with their own icon, notifications and offline use. One app for every device and, if needed, published on Google Play and the App Store.</p>
-          <div class="ex"><b>For example:</b> a customer app with bookings and notifications, an app for your staff, a desktop program for the office.</div>
+          <p>Apps installable on smartphones (Android and iPhone) and computers, with their own icon, notifications and offline use. A single app for every device, ready for Google Play and the App Store.</p>
+          <div class="ex"><b>Typical use cases:</b> customer apps with bookings and notifications, staff apps, office software.</div>
         </article>
         <article class="svc">
           <span class="ico" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-3-6.7L21 8"/><path d="M21 3v5h-5"/><path d="M12 8v4l3 2"/></svg></span>
           <h3>Process automation</h3>
           <p>Repetitive tasks are handled automatically: collecting data from portals, files and emails, ready-made reports and alerts. Less manual work, fewer mistakes.</p>
-          <div class="ex"><b>For example:</b> a sales report every Monday, deadline reminders.</div>
+          <div class="ex"><b>Typical use cases:</b> weekly sales reports, automatic deadline reminders.</div>
         </article>
         <article class="svc">
           <span class="ico" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></span>
           <h3>Data integration and dashboards</h3>
-          <p>I connect the software you already use and turn scattered data into clear dashboards that update themselves, so you can decide with the numbers in front of you.</p>
-          <div class="ex"><b>For example:</b> merging Excel files from different departments, KPIs refreshed every day.</div>
+          <p>I integrate the software you already use and turn scattered data into clear, automatically updated dashboards for data-driven decisions.</p>
+          <div class="ex"><b>Typical use cases:</b> consolidating departmental Excel files, KPIs refreshed daily.</div>
         </article>
         <article class="svc">
           <span class="ico" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5M8 11h6M11 8v6"/></svg></span>
           <h3>Public data monitoring</h3>
-          <p>Grant calls, tenders, official notice boards, local ordinances and building permits checked every day on your behalf. You receive only what matters to you, in a calendar or an alert.</p>
-          <div class="ex"><b>For example:</b> new tenders in your sector, roadworks and building sites in your area.</div>
+          <p>Daily monitoring of grant calls, tenders, official notice boards, local ordinances and building permits. You receive only relevant information, in a calendar or via alerts.</p>
+          <div class="ex"><b>Typical use cases:</b> new tenders in your sector, roadworks and building sites in your area.</div>
         </article>
         <article class="svc">
           <span class="ico" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M3 15h18M9 3v18"/></svg></span>
           <h3>Excel and the tools you already use</h3>
-          <p>I fix, speed up and make existing spreadsheets and procedures reliable. When it makes sense, I turn them into a proper application that is easier to use.</p>
-          <div class="ex"><b>For example:</b> a file that keeps freezing, a quoting tool, an archive that needs tidying up.</div>
+          <p>I optimise existing spreadsheets and procedures, making them faster and more reliable. When it makes sense, I turn them into a proper application that is easier to use.</p>
+          <div class="ex"><b>Typical use cases:</b> slow or unstable files, quoting tools, archives to reorganise.</div>
         </article>
         <article class="svc">
           <span class="ico" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5V5a2 2 0 0 1 2-2h12v18H6a2 2 0 0 1-2-1.5Z"/><path d="M8 7h6M8 11h6"/></svg></span>
           <h3>Documentation and training</h3>
-          <p>Manuals, procedures, specifications and courses written in plain language, in English or Italian, so people really know how to use their tools.</p>
-          <div class="ex"><b>For example:</b> a guide for colleagues, an operating procedure, a short in-house course.</div>
+          <p>Manuals, procedures, technical specifications and training, in English or Italian, for correct and effective use of your tools.</p>
+          <div class="ex"><b>Typical use cases:</b> staff guides, operating procedures, in-house training.</div>
         </article>
         <article class="svc">
           <span class="ico" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18v3h3l6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.5-.5-.5-2.5Z"/></svg></span>
           <h3>Support and maintenance</h3>
-          <p>Updates, small changes and support after delivery, whenever you need them. You can count on me over time, not just for the first release.</p>
-          <div class="ex"><b>For example:</b> a new page, a new field in your management tool, a periodic check-up.</div>
+          <p>Updates, changes and technical support after delivery, with continuity over time, not just for the first release.</p>
+          <div class="ex"><b>Typical use cases:</b> new pages, new management tool features, periodic check-ups.</div>
         </article>
       </div>
     </div>
@@ -563,7 +560,7 @@ h1 .br, h2 .br { display: block; text-wrap: balance; }
         </article>
         <article class="ex-card">
           <div class="demo" aria-hidden="true"><div class="mk-app"><div class="pc"><div class="tb"><i></i><i></i><i></i></div><div class="rows"><small>Jobs this week</small><div class="r"><b>Rossi Ltd · boiler</b><span class="st ok">Closed</span></div><div class="r"><b>Green Studio · air conditioning</b><span class="st wait">In progress</span></div><div class="r"><b>Bianchi &amp; Co. · wiring</b><span class="st new">Tomorrow</span></div></div></div><div class="ph"><div class="scr"><div class="sh">Today</div><div class="sl"><div class="it ok"><i></i><b>Rossi Ltd</b><small>09:30 · done</small></div><div class="it now"><i></i><b>Green Studio</b><small>11:00 · in progress</small></div><div class="it"><i></i><b>12 Rome Street</b><small>15:00</small></div></div><div class="tab"><span></span><span></span><span></span></div></div></div></div></div>
-          <div class="ex-body"><span class="ex-tag">App · Phone and computer</span><h3>An app for field staff</h3><p>Technicians see and close their jobs from their phone, even offline. At the office, everything is up to date on the computer.</p></div>
+          <div class="ex-body"><span class="ex-tag">App · Phone and computer</span><h3>An app for field staff</h3><p>Technicians manage and close jobs from their smartphone, even offline. At the office, data is always up to date.</p></div>
         </article>
         <article class="ex-card">
           <div class="demo" aria-hidden="true"><div class="mk-book"><small class="cap">Choose a time</small><div class="days"><span class="">Mon 9</span><span class="">Tue 10</span><span class="on">Wed 11</span><span class="">Thu 12</span></div><div class="slots"><span class="x">09:00</span><span class="">10:00</span><span class="on">11:00</span><span class="">15:00</span><span class="x">16:00</span><span class="">17:00</span></div><span class="cbtn">Confirm booking</span></div></div>
@@ -594,9 +591,9 @@ h1 .br, h2 .br { display: block; text-wrap: balance; }
       </div>
       <div class="reasons">
         <div class="reason"><span class="num">Experience</span><h3>Ten years of experience</h3><p>I have worked for major groups in pharmaceuticals, energy, telecommunications and transport. I bring the same rigour to the smallest projects.</p></div>
-        <div class="reason"><span class="num">Clarity</span><h3>Clear, fixed prices</h3><p>Before we start, you know what you will get, when, and how much it costs. The agreed price does not change unless we agree on new requests together.</p></div>
+        <div class="reason"><span class="num">Clarity</span><h3>Clear, fixed prices</h3><p>Before we start, you know the scope, timeline and cost. The agreed price does not change unless we agree on new requests together.</p></div>
         <div class="reason"><span class="num">Direct contact</span><h3>One point of contact, always</h3><p>No intermediaries: you deal directly with the person who designs and builds the work, with quick, practical answers.</p></div>
-        <div class="reason"><span class="num">Simplicity</span><h3>Simple, lasting solutions</h3><p>I choose the simplest path that genuinely solves the problem, with low or zero running costs and no needless complexity.</p></div>
+        <div class="reason"><span class="num">Simplicity</span><h3>Simple, lasting solutions</h3><p>I choose the simplest effective solution, with low running costs and no unnecessary complexity.</p></div>
         <div class="reason"><span class="num">Freedom</span><h3>Everything stays yours</h3><p>Code, data and documentation belong to you. You receive clear instructions and have no obligation to keep working with me.</p></div>
         <div class="reason"><span class="num">Confidentiality</span><h3>Your data in safe hands</h3><p>I am used to working with sensitive data and critical systems: protected access, encryption where needed, complete discretion.</p></div>
       </div>
@@ -669,7 +666,7 @@ h1 .br, h2 .br { display: block; text-wrap: balance; }
           <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Delivery dates and intermediate milestones</span></li>
           <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>The fixed, all-inclusive price</span></li>
           <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Any running costs, if there are any</span></li>
-          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>What you receive at the end and how to use it</span></li>
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>What you receive on delivery and how to use it</span></li>
         </ul>
         <span class="free">No cost, no obligation.</span>
       </div>
@@ -683,10 +680,10 @@ h1 .br, h2 .br { display: block; text-wrap: balance; }
         <h2>Answers to the <em>most common questions</em>.</h2>
       </div>
       <div class="faq">
-        <details><summary>How much does a website or an application cost?</summary><p>It depends on what you need: a company website and a management tool are very different jobs. That is why the quote is free and the price is fixed: you know the figure before we start, and it does not change unless we agree on new requests together.</p></details>
-        <details><summary>Do you take on small jobs too?</summary><p>Yes. Even a change to an Excel sheet, a single page or a small automation can save you hours every week. Every request is considered with the same care.</p></details>
+        <details><summary>How much does a website or an application cost?</summary><p>It depends on the project: a company website and a management tool are very different jobs. That is why the quote is free and the price is fixed: you know the figure before we start, and it does not change unless we agree on new requests together.</p></details>
+        <details><summary>Do you take on smaller projects too?</summary><p>Yes. Even a change to an Excel sheet, a single page or a small automation can save you hours every week. Every request is considered with the same care.</p></details>
         <details><summary>How soon will I receive the quote?</summary><p>Within 24 hours of your request. If further details are needed, I will first contact you with a few brief questions.</p></details>
-        <details><summary>How long does the work take?</summary><p>Timelines are set out in the quote and depend on the project. During development I show you working previews, so you can follow progress and ask for adjustments straight away.</p></details>
+        <details><summary>How long does the work take?</summary><p>Timelines are set out in the quote and depend on the project. During development I share working previews, so you can review progress and request changes as we go.</p></details>
         <details><summary>Do you only work in Rome?</summary><p>I work remotely with clients across Italy and Europe. In and around Rome, we can also meet in person.</p></details>
         <details><summary>Who owns the website and the data?</summary><p>You do. Code, content, data and documentation remain your property, and I explain how to manage them without me.</p></details>
         <details><summary>How much does it cost to keep it online?</summary><p>Often very little or nothing: I favour solutions with low running costs. Any costs, such as the domain or an external service, are listed in the quote.</p></details>
@@ -736,7 +733,7 @@ h1 .br, h2 .br { display: block; text-wrap: balance; }
   </div>
 </section>
 
-<a class="wa" href="https://wa.me/393899818719?text=Hi%20Luciano%2C%20I%20saw%20your%20website%20and%20I%20would%20like%20a%20quote%20for%20" target="_blank" rel="noopener" aria-label="Message me on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg><span>Message me on WhatsApp</span></a>
+<a class="wa" href="https://wa.me/393899818719?text=Hi%20Luciano%2C%20I%20saw%20your%20website%20and%20I%20would%20like%20a%20quote%20for%20" target="_blank" rel="noopener" aria-label="Message me on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></a>
 
 <footer class="foot">
   <div class="wrap">
